@@ -1290,9 +1290,9 @@ android_app_import {
 }
 
 android_app_import {
-    name: "SomcMediaExtensionProviderStarter",
+    name: "SomcDualshockManager",
     owner: "sony",
-    apk: "proprietary/product/app/SomcMediaExtensionProviderStarter/SomcMediaExtensionProviderStarter.apk",
+    apk: "proprietary/product/app/SomcDualshockManager/SomcDualshockManager.apk",
     certificate: "platform",
     dex_preopt: {
         enabled: false,
@@ -1347,21 +1347,9 @@ android_app_import {
 }
 
 android_app_import {
-    name: "SemcMusic",
+    name: "ExtMonitorApp",
     owner: "sony",
-    apk: "proprietary/product/priv-app/SemcMusic/SemcMusic.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    product_specific: true,
-}
-
-android_app_import {
-    name: "SomcMediaExtensionProvider-Yodo",
-    owner: "sony",
-    apk: "proprietary/product/priv-app/SomcMediaExtensionProvider-Yodo/SomcMediaExtensionProvider-Yodo.apk",
+    apk: "proprietary/product/priv-app/ExtMonitorApp/ExtMonitorApp.apk",
     certificate: "platform",
     dex_preopt: {
         enabled: false,
