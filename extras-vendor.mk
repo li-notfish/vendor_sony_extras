@@ -6,12 +6,16 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/sony/extras
 
 PRODUCT_COPY_FILES += \
+    vendor/sony/extras/proprietary/product/etc/default-permissions/default-permissions_com.sonymobile.gps.extension.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/default-permissions/default-permissions_com.sonymobile.gps.extension.xml \
+    vendor/sony/extras/proprietary/product/etc/permissions/com.sony.360ra.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.sony.360ra.xml \
     vendor/sony/extras/proprietary/product/etc/permissions/com.sony.threesixtyra.audiofx.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.sony.threesixtyra.audiofx.xml \
+    vendor/sony/extras/proprietary/product/etc/permissions/com.sonyericsson.music.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.sonyericsson.music.xml \
     vendor/sony/extras/proprietary/product/etc/permissions/com.sonymobile.extmonitorapp.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.sonymobile.extmonitorapp.xml \
     vendor/sony/extras/proprietary/product/etc/permissions/com.sonymobile.moviecreator.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.sonymobile.moviecreator.xml \
     vendor/sony/extras/proprietary/product/etc/permissions/com.sonymobile.photopro.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.sonymobile.photopro.xml \
     vendor/sony/extras/proprietary/product/etc/permissions/jp.co.sony.mc.usbextoutaudio.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/jp.co.sony.mc.usbextoutaudio.xml \
     vendor/sony/extras/proprietary/product/etc/permissions/jp.co.sony.threesixtyra.system.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/jp.co.sony.threesixtyra.system.xml \
+    vendor/sony/extras/proprietary/product/etc/permissions/privapp-permissions_com.sonymobile.gps.extension.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions_com.sonymobile.gps.extension.xml \
     vendor/sony/extras/proprietary/system/usr/keylayout/AVRCP.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/AVRCP.kl \
     vendor/sony/extras/proprietary/system/usr/keylayout/Generic.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/Generic.kl \
     vendor/sony/extras/proprietary/system/usr/keylayout/Vendor_0079_Product_0011.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/Vendor_0079_Product_0011.kl \
@@ -190,9 +194,16 @@ PRODUCT_COPY_FILES += \
     vendor/sony/extras/proprietary/system/usr/keylayout/Vendor_2e95_Product_7725.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/Vendor_2e95_Product_7725.kl \
     vendor/sony/extras/proprietary/system/usr/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/gpio-keys.kl \
     vendor/sony/extras/proprietary/system/usr/keylayout/idroid_con.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/idroid_con.kl \
+    vendor/sony/extras/proprietary/system_ext/etc/default-permissions/exceptions-soundenhancement.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/default-permissions/exceptions-soundenhancement.xml \
+    vendor/sony/extras/proprietary/system_ext/etc/default-permissions/privapp-exceptions-wirelessplayback.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/default-permissions/privapp-exceptions-wirelessplayback.xml \
     vendor/sony/extras/proprietary/system_ext/etc/permissions/com.dolby.daxservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.dolby.daxservice.xml \
     vendor/sony/extras/proprietary/system_ext/etc/permissions/com.sonyericsson.soundenhancement.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.sonyericsson.soundenhancement.xml \
+    vendor/sony/extras/proprietary/system_ext/etc/permissions/com.sonymobile.audioutil.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.sonymobile.audioutil.xml \
     vendor/sony/extras/proprietary/system_ext/etc/permissions/com.sonymobile.gesdklibrary.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.sonymobile.gesdklibrary.xml \
+    vendor/sony/extras/proprietary/system_ext/etc/permissions/privapp-permissions-aptxals.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-aptxals.xml \
+    vendor/sony/extras/proprietary/system_ext/etc/permissions/privapp-permissions-aptxui.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-aptxui.xml \
+    vendor/sony/extras/proprietary/system_ext/etc/permissions/privapp-permissions-wirelessplayback.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-wirelessplayback.xml \
+    vendor/sony/extras/proprietary/system_ext/etc/sysconfig/config_com.sonyericsson.soundenhancement_preferences.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/config_com.sonyericsson.soundenhancement_preferences.xml \
     vendor/sony/extras/proprietary/vendor/etc/DrangeparaAAC128.bin:$(TARGET_COPY_OUT_VENDOR)/etc/DrangeparaAAC128.bin \
     vendor/sony/extras/proprietary/vendor/etc/DrangeparaAAC256.bin:$(TARGET_COPY_OUT_VENDOR)/etc/DrangeparaAAC256.bin \
     vendor/sony/extras/proprietary/vendor/etc/DrangeparaAAC64.bin:$(TARGET_COPY_OUT_VENDOR)/etc/DrangeparaAAC64.bin \
@@ -203,6 +214,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/extras/proprietary/vendor/etc/DrangeparaPCM48.bin:$(TARGET_COPY_OUT_VENDOR)/etc/DrangeparaPCM48.bin \
     vendor/sony/extras/proprietary/vendor/etc/XTC_speaker_coef.hki:$(TARGET_COPY_OUT_VENDOR)/etc/XTC_speaker_coef.hki \
     vendor/sony/extras/proprietary/vendor/etc/alc.speaker.bin:$(TARGET_COPY_OUT_VENDOR)/etc/alc.speaker.bin \
+    vendor/sony/extras/proprietary/vendor/etc/audio_app_white_list.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_app_white_list.xml \
     vendor/sony/extras/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
     vendor/sony/extras/proprietary/vendor/etc/dsx_param_file.bin:$(TARGET_COPY_OUT_VENDOR)/etc/dsx_param_file.bin \
     vendor/sony/extras/proprietary/vendor/etc/init/android.hardware.media.c2@1.0-threesixty-ra-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.c2@1.0-threesixty-ra-service.rc \
@@ -271,12 +283,18 @@ PRODUCT_PACKAGES += \
     CameraCommon-Yodo \
     CameraPanorama-Yodo \
     ExtMonitorApp \
+    SomcExtGps \
     SomcMovieCreator-AsahiYodo \
     SomcPhotoPro \
     ThreeSixtyRASystem \
     UsbExtOutAudio \
+    aptxacu \
     DolbySound \
+    ExtendedAudioService \
     SoundEnhancement \
+    WirelessPlaybackQuality \
+    aptxals \
+    aptxui \
     daxService \
     com.sony.threesixtyra.audiofx \
     com.sonymobile.gesdklibrary \
@@ -285,4 +303,5 @@ PRODUCT_PACKAGES += \
     vendor.threesixty_ra.codec2.xml \
     android.hardware.media.c2@1.0-threesixty-ra-service \
     vendor.dolby.hardware.dms@2.0-service \
-    vendor.dolby.media.c2@1.0-service
+    vendor.dolby.media.c2@1.0-service \
+    aptxalsOverlayCreateProject
